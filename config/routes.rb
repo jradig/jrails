@@ -1,4 +1,9 @@
 Jrails::Application.routes.draw do
+  root :to => 'pages#home'
+  get 'about' => 'pages#about'
+  get 'heropage' => 'pages#heropage'
+
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
