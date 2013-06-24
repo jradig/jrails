@@ -1,10 +1,10 @@
 Jrails::Application.routes.draw do
-  devise_for :users
+  
 
   root :to => 'pages#home'
   get 'about' => 'pages#about'
   get 'heropage' => 'pages#heropage'
-
+devise_for :users
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
